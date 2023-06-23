@@ -1,0 +1,26 @@
+name: Validate renovate config
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+      - uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node
+      - name: Validate renovate config
+        run: |
+          for file in *.json*
+          do
+            echo "$file"
+            RENOVATE_CONFIG_FILE=${file} npx --package renovate -c 'renovate-config-validator'
+          done
