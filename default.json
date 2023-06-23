@@ -9,7 +9,9 @@
     ":semanticCommitTypeAll(chore)"
   ],
   "rangeStrategy": "bump",
-  "lockFileMaintenance": false,
+  "lockFileMaintenance": {
+    "enabled": false
+  },
   "separateMajorMinor": false,
   "postUpdateOptions": [
     "gomodTidy",
@@ -21,14 +23,18 @@
       "matchPackageNames": ["cesium"],
       "groupName": "cesium",
       "groupSlug": "cesium",
-      "schedule": ["before 3:00 am on the 4th day of the month"]
+      "schedule": [
+        "before 3:00 am on the 4th day of the month"
+      ]
     },
     {
       "matchManagers": ["npm"],
       "excludePackageNames": ["cesium"],
       "groupName": "npm dependencies",
       "groupSlug": "npm",
-      "schedule": ["before 3:00 am on the 4th day of the month"]
+      "schedule": [
+        "before 3:00 am on the 4th day of the month"
+      ]
     },
     {
       "matchManagers": ["gomod"],
@@ -61,7 +67,7 @@
       "groupSlug": "terraform",
       "semanticCommitType": "ci",
       "schedule": [
-        "before 3am on the first day of the month"
+        "before 3:00 am on the 4th day of the month"
       ]
     }
   ]
