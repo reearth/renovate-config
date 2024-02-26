@@ -69,6 +69,14 @@
       "schedule": [
         "before 3:00 am on the 4th day of the month"
       ]
+    },
+    {
+      "matchManagers": ["cargo"],
+      "groupName": "Cargo dependencies",
+      "groupSlug": "cargo",
+      "schedule": [
+        "before 3:00 am on the 4th day of the month"
+      ]
     }
   ]
 }
