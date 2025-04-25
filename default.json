@@ -25,7 +25,7 @@
       "groupName": "pintagtodigest",
       "groupSlug": "pintagtodigest",
       "pinDigests": true,
-      "schedule": [ "0 */6 * * *" ]
+      "schedule": [ "* */6 * * *" ]
     },
     {
       "matchManagers": ["npm"],
