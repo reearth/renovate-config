@@ -19,6 +19,15 @@
   ],
   "packageRules": [
     {
+      "matchDepTypes": [
+        "action"
+      ],
+      "groupName": "pintagtodigest",
+      "groupSlug": "pintagtodigest",
+      "pinDigests": true,
+      "schedule": [ "0 */6 * * *" ]
+    },
+    {
       "matchManagers": ["npm"],
       "matchPackageNames": ["cesium"],
       "groupName": "cesium",
