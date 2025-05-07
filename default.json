@@ -22,7 +22,7 @@
       "matchDepTypes": [
         "action"
       ],
-      "groupName": "pintagtodigest",
+      "groupName": "github action tag version to digest",
       "groupSlug": "pintagtodigest",
       "pinDigests": true,
       "schedule": [ "* */6 * * *" ]
