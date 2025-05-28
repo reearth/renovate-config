@@ -25,6 +25,7 @@
       "groupName": "github action tag version to digest",
       "groupSlug": "pintagtodigest",
       "pinDigests": true,
+      "matchUpdateTypes": [ "minor", "patch", "pinDigest" ],
       "schedule": [ "* */6 * * *" ]
     },
     {
