@@ -26,7 +26,8 @@
       "groupSlug": "pintagtodigest",
       "pinDigests": true,
       "matchUpdateTypes": [ "minor", "patch" ],
-      "schedule": [ "* */6 * * *" ]
+      "schedule": [ "* */6 * * *" ],
+      "semanticCommitType": "ci"
     },
     {
       "matchManagers": ["npm"],
@@ -66,6 +67,7 @@
       "matchManagers": ["github-actions"],
       "groupName": "GitHub Actions dependencies",
       "groupSlug": "github-actions",
+      "matchUpdateTypes": [ "minor", "patch" ],
       "semanticCommitType": "ci",
       "schedule": [
         "before 3:00 am on the 4th day of the month"
