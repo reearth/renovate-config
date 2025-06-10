@@ -22,8 +22,10 @@
       "matchDepTypes": [
         "action"
       ],
-      "matchManagers": ["github-actions"],
-      "groupName": "github action tag version to digest",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "groupName": "pintagtodigest",
       "groupSlug": "pintagtodigest",
       "pinDigests": true,
       "matchUpdateTypes": [ "minor", "patch" ],
