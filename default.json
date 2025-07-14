@@ -25,7 +25,7 @@
       "matchManagers": [
         "github-actions"
       ],
-      "groupName": "github action tag to commmit-hash",
+      "groupName": "github action update or pin versions",
       "groupSlug": "pintagtodigest",
       "pinDigests": true,
       "matchUpdateTypes": [ "minor", "patch" ],
