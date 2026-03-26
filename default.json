@@ -34,6 +34,11 @@
       "semanticCommitType": "ci"
     },
     {
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["actions/*"],
+      "pinDigests": false
+    },
+    {
       "matchManagers": ["npm"],
       "matchPackageNames": ["cesium"],
       "groupName": "cesium",
