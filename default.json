@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "7 days",
   "extends": [
     "config:base",
     ":semanticCommits",
@@ -30,7 +30,7 @@
       "groupSlug": "pintagtodigest",
       "pinDigests": true,
       "matchUpdateTypes": [ "minor", "patch" ],
-      "schedule": [ "* */6 * * *" ],
+      "schedule": ["before 3:00 am on monday"],
       "semanticCommitType": "ci"
     },
     {
@@ -39,7 +39,7 @@
       "groupName": "cesium",
       "groupSlug": "cesium",
       "schedule": [
-        "before 3:00 am on the 4th day of the month"
+        "before 3:00 am on monday"
       ]
     },
     {
@@ -48,7 +48,7 @@
       "groupName": "npm dependencies",
       "groupSlug": "npm",
       "schedule": [
-        "before 3:00 am on the 4th day of the month"
+        "before 3:00 am on monday"
       ]
     },
     {
@@ -56,7 +56,7 @@
       "groupName": "Go dependencies",
       "groupSlug": "gomod",
       "schedule": [
-        "before 3:00 am on the 4th day of the month"
+        "before 3:00 am on monday"
       ]
     },
     {
@@ -64,7 +64,7 @@
       "groupName": "Docker dependencies",
       "groupSlug": "docker",
       "schedule": [
-        "before 3:00 am on the 4th day of the month"
+        "before 3:00 am on monday"
       ]
     },
     {
@@ -73,7 +73,7 @@
       "groupSlug": "terraform",
       "semanticCommitType": "ci",
       "schedule": [
-        "before 3:00 am on the 4th day of the month"
+        "before 3:00 am on monday"
       ]
     },
     {
@@ -81,7 +81,15 @@
       "groupName": "Cargo dependencies",
       "groupSlug": "cargo",
       "schedule": [
-        "before 3:00 am on the 4th day of the month"
+        "before 3:00 am on monday"
+      ]
+    },
+    {
+      "matchManagers": ["pip_requirements", "pip_setup", "pipenv", "poetry", "pep621", "uv"],
+      "groupName": "Python dependencies",
+      "groupSlug": "python",
+      "schedule": [
+        "before 3:00 am on monday"
       ]
     }
   ]
