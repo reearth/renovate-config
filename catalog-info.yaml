@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: renovate-config
+  namespace: reearth
+  description: Sharable config preset for Renovate used in Re:Earth
+  annotations:
+    github.com/project-slug: reearth/renovate-config
+  links:
+  - url: https://github.com/reearth/renovate-config
+    title: GitHub
+    icon: github
+spec:
+  type: service
+  lifecycle: production
+  owner: reearth/sre
